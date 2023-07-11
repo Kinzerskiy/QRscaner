@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8E54FAA22A5D7197003C92A7 /* QRscanerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54FAA12A5D7197003C92A7 /* QRscanerApp.swift */; };
-		8E54FAA42A5D7197003C92A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54FAA32A5D7197003C92A7 /* ContentView.swift */; };
+		8E54FAA42A5D7197003C92A7 /* ScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54FAA32A5D7197003C92A7 /* ScanerView.swift */; };
 		8E54FAA62A5D719D003C92A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E54FAA52A5D719D003C92A7 /* Assets.xcassets */; };
 		8E54FAA92A5D719D003C92A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E54FAA82A5D719D003C92A7 /* Preview Assets.xcassets */; };
 		8E54FAB12A5D7385003C92A7 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8E54FAB02A5D7385003C92A7 /* CodeScanner */; };
+		8E54FAB32A5D7B68003C92A7 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54FAB22A5D7B68003C92A7 /* CheckBoxView.swift */; };
+		8E54FAB52A5D7FE0003C92A7 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54FAB42A5D7FE0003C92A7 /* ProductListView.swift */; };
+		8E78B2A02A5DD14400BC2BB3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78B29F2A5DD14400BC2BB3 /* Product.swift */; };
+		8ECEF61C2A5DD39600DBED91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ECEF61B2A5DD39600DBED91 /* GoogleService-Info.plist */; };
+		8EDC05AD2A5DC98A00C5E237 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC05AC2A5DC98A00C5E237 /* FirebaseAnalytics */; };
+		8EDC05AF2A5DC98A00C5E237 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC05AE2A5DC98A00C5E237 /* FirebaseDatabase */; };
+		8EDC05B12A5DC98A00C5E237 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC05B02A5DC98A00C5E237 /* FirebaseDatabaseSwift */; };
+		8EDC05B32A5DC98A00C5E237 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC05B22A5DC98A00C5E237 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E54FA9E2A5D7197003C92A7 /* QRscaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRscaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E54FAA12A5D7197003C92A7 /* QRscanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRscanerApp.swift; sourceTree = "<group>"; };
-		8E54FAA32A5D7197003C92A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8E54FAA32A5D7197003C92A7 /* ScanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanerView.swift; sourceTree = "<group>"; };
 		8E54FAA52A5D719D003C92A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E54FAA82A5D719D003C92A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E54FAB22A5D7B68003C92A7 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		8E54FAB42A5D7FE0003C92A7 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		8E78B29F2A5DD14400BC2BB3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8ECEF61B2A5DD39600DBED91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDC05B12A5DC98A00C5E237 /* FirebaseDatabaseSwift in Frameworks */,
+				8EDC05AF2A5DC98A00C5E237 /* FirebaseDatabase in Frameworks */,
+				8EDC05AD2A5DC98A00C5E237 /* FirebaseAnalytics in Frameworks */,
+				8EDC05B32A5DC98A00C5E237 /* FirebaseFirestore in Frameworks */,
 				8E54FAB12A5D7385003C92A7 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +53,7 @@
 		8E54FA952A5D7197003C92A7 = {
 			isa = PBXGroup;
 			children = (
+				8ECEF61B2A5DD39600DBED91 /* GoogleService-Info.plist */,
 				8E54FAA02A5D7197003C92A7 /* QRscaner */,
 				8E54FA9F2A5D7197003C92A7 /* Products */,
 			);
@@ -54,7 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				8E54FAA12A5D7197003C92A7 /* QRscanerApp.swift */,
-				8E54FAA32A5D7197003C92A7 /* ContentView.swift */,
+				8E78B2A12A5DD14C00BC2BB3 /* Models */,
+				8E78B2A22A5DD19800BC2BB3 /* Views */,
 				8E54FAA52A5D719D003C92A7 /* Assets.xcassets */,
 				8E54FAA72A5D719D003C92A7 /* Preview Content */,
 			);
@@ -67,6 +85,24 @@
 				8E54FAA82A5D719D003C92A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E78B2A12A5DD14C00BC2BB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E78B29F2A5DD14400BC2BB3 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E78B2A22A5DD19800BC2BB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E54FAA32A5D7197003C92A7 /* ScanerView.swift */,
+				8E54FAB22A5D7B68003C92A7 /* CheckBoxView.swift */,
+				8E54FAB42A5D7FE0003C92A7 /* ProductListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +123,10 @@
 			name = QRscaner;
 			packageProductDependencies = (
 				8E54FAB02A5D7385003C92A7 /* CodeScanner */,
+				8EDC05AC2A5DC98A00C5E237 /* FirebaseAnalytics */,
+				8EDC05AE2A5DC98A00C5E237 /* FirebaseDatabase */,
+				8EDC05B02A5DC98A00C5E237 /* FirebaseDatabaseSwift */,
+				8EDC05B22A5DC98A00C5E237 /* FirebaseFirestore */,
 			);
 			productName = QRscaner;
 			productReference = 8E54FA9E2A5D7197003C92A7 /* QRscaner.app */;
@@ -118,6 +158,7 @@
 			mainGroup = 8E54FA952A5D7197003C92A7;
 			packageReferences = (
 				8E54FAAF2A5D7385003C92A7 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				8EDC05AB2A5DC98A00C5E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 8E54FA9F2A5D7197003C92A7 /* Products */;
 			projectDirPath = "";
@@ -135,6 +176,7 @@
 			files = (
 				8E54FAA92A5D719D003C92A7 /* Preview Assets.xcassets in Resources */,
 				8E54FAA62A5D719D003C92A7 /* Assets.xcassets in Resources */,
+				8ECEF61C2A5DD39600DBED91 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E54FAA42A5D7197003C92A7 /* ContentView.swift in Sources */,
+				8E54FAB52A5D7FE0003C92A7 /* ProductListView.swift in Sources */,
+				8E54FAA42A5D7197003C92A7 /* ScanerView.swift in Sources */,
+				8E78B2A02A5DD14400BC2BB3 /* Product.swift in Sources */,
 				8E54FAA22A5D7197003C92A7 /* QRscanerApp.swift in Sources */,
+				8E54FAB32A5D7B68003C92A7 /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +406,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		8EDC05AB2A5DC98A00C5E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -368,6 +421,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8E54FAAF2A5D7385003C92A7 /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		8EDC05AC2A5DC98A00C5E237 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EDC05AB2A5DC98A00C5E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8EDC05AE2A5DC98A00C5E237 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EDC05AB2A5DC98A00C5E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8EDC05B02A5DC98A00C5E237 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EDC05AB2A5DC98A00C5E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		8EDC05B22A5DC98A00C5E237 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EDC05AB2A5DC98A00C5E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

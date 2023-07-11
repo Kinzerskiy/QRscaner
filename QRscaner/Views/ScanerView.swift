@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ScanerView.swift
 //  QRscaner
 //
 //  Created by Mac Pro on 11.07.2023.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CodeScanner
 
-struct ContentView: View {
+struct ScanerView: View {
     @State var isPresentingScanner = false
     @State var scannedCode: String = "Scan QR code"
     
@@ -40,6 +40,6 @@ struct ContentView: View {
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            ScanerView()
         }
     }
