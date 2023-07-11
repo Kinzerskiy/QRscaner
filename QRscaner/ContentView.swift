@@ -6,21 +6,40 @@
 //
 
 import SwiftUI
+import CodeScanner
 
 struct ContentView: View {
+    @State var isPresentingScanner = false
+    @State var scannedCode: String = "Scan QR code"
+    
+    var scannerSheet: some View {
+        CodeScannerView(
+            codeTypes: [.qr],
+            completion: { result in
+                if case let .success(code) = result {
+                    self.scannedCode = code.string
+                    self.isPresentingScanner = false
+                }
+            }
+        )
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 10) {
+            Text(scannedCode)
+            Button("Scan QR code") {
+                self.isPresentingScanner = true
+            }
+            
+            .sheet(isPresented: $isPresentingScanner) {
+                self.scannerSheet
+            }
         }
-        .padding()
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
